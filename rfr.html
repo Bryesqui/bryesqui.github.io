@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RFR.com</title>
+    <link rel="stylesheet" type="text/css" href= "css/rfr.css" media="screen" />
+    <script type="text/javascript" src="rfr.js"></script>
+  </head>
+  <body>
+    <main>
+      <header class="break">
+        <h1>RFR contractors inc.</h1>
+        <nav>
+          <a href="#"><img class="hamburger" src="icons/menu%20icon.svg"></a>
+        </nav>
+      </header>
+      <div class="imgCarousel w3-content w3-section">
+        <img class="mySlides w3-animate-fading" src="images/coffeeShop.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/kitchen.jpg" style="width:100%">
+        <img class="mySlides w3-animate-fading" src="images/office.jpg" style="width:100%">
+      </div>
+      <div class="subHeader">
+        <h2>What We Do</h2>
+      </div>
+      <article>
+        <div class="work">
+          <div class="workR workChild">
+          <h3>Residential</h3> 
+          <p>Custom Homes, Buildings, Condos, Renovations, Remodeling, Additions, Kitchens & Bathrooms.</p>
+        </div>
+          <div class="workO workChild">
+          <h3>Office TI</h3>
+          <p>Tenant Improvements,
+Office Build Outs, Adding Space, Moving Walls, and
+Aesthetic Upgrades.</p>
+        </div>
+          <div class= "workC workChild">
+          <h3>Commercial</h3>
+          <p>Interior/Exterior, Franchises, Retail Stores, Office Build Outs, New Construction and Industrial Buildings.</p>
+        </div>
+        </div>  
+        <div class="buttonContainer">   
+          <div class="copy">
+            <p id="copy">We deliver to our customers peace of mind and the knowledge the job is going to finish on time, in budget, and to exact specifications. </p>
+          </div>
+          <button class="quote">get a quote</button>
+        </div>
+      </article>
+      <footer class="break">
+        <h4>RFR IS A GENERAL CONTRACTOR SERVICING IN AND AROUND SOUTHERN CALIFORNIA</h4>
+      </footer> 
+    </main>
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 9000);    
+      }
+    </script>
+  </body>
+
+</html>

@@ -1,0 +1,97 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+header, footer, .subHeader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20%;
+  width: 100%;
+  background-color: #274857;
+  color: white;
+}
+.imgCarousel {
+  width: 100%;
+  overflow: hidden;
+}
+#slides{
+  object-fit: cover;
+}
+article {
+  width: 100%;
+  height: 350px;
+  background-color: #D9987C;
+}
+.work {
+  display:flex;
+  flex-direction: row;
+}
+.workChild {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.workR, .workO{
+  border-right-style: solid;
+  border-right-color: #EEE4E4;
+  border-right-width: medium;
+}
+.buttonContainer{
+  display:flex;
+  flex-direction: column;
+}
+#copy{
+  width: 85%;
+  text-align: center;
+  color: white;
+  background-color: #274857;
+  padding:1em;
+}
+.copy{
+  display: flex;
+  justify-content: center;
+}
+
+h3{
+  color: white;
+  margin:;
+}
+p{ 
+  color: #274857;
+  margin:0;
+}
+button {
+  margin-top: 2em;
+  width: 50%;
+}
+.w3-animate-fading{
+  animation: fading 10s infinite;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: fading;
+}
+@keyframes fading{
+  0%{
+  opacity: 0;
+}
+50%{
+  opacity: 1;
+}
+100%{
+  opacity: 0;
+}
+}
+.break{
+  display:flex;
+  align-items: center;
+}
+
